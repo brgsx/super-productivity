@@ -75,6 +75,9 @@ script:
 #        yarn dist:mac:mas
 #      fi
 
+before_deploy:
+  - sudo apt-get update -qq
+  - sudo apt-get install snapd
 
 deploy:
   # we use edge because of this: https://travis-ci.community/t/snap-deployment-stopped-working-out-of-nowhere/6908/2
@@ -84,8 +87,6 @@ deploy:
     channel: edge
     skip_cleanup: true
     on:
-      tags: false
-      branch: master
       condition: $TRAVIS_OS_NAME = linux
   - provider: snap
     snap: ./app-builds/*.snap
