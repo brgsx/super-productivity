@@ -72,7 +72,7 @@
         "FILTER_USER": "Nome de usuário (ex.: para filtrar as alterações sozinho)",
         "IS_AUTO_ADD_TO_BACKLOG": "Adicionar automáticamente problemas não resolvidos do Github para o backlog",
         "IS_AUTO_POLL": "Obter automáticamente issues do Github para alterações",
-        "IS_SEARCH_ISSUES_FROM_GITHUB": "Mostrar issues do Github como sugestões qando adicionar novas tarefas",
+        "IS_SEARCH_ISSUES_FROM_GITHUB": "Mostrar issues do Github como sugestões quando adicionar novas tarefas",
         "REPO": "\"username/repositoryName\" para o repositório git que você deseja rastrear",
         "TOKEN": "Token de acesso"
       },
